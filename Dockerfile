@@ -4,6 +4,6 @@ FROM ghcr.io/pterodactyl/panel:latest
 # Expose Render's default expected port
 EXPOSE 10000
 
-# Override the default environment port setting to map with Render
+# Force environment overrides directly inside the image
 ENV APP_PORT=10000
 ENV PORT=10000
